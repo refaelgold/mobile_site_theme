@@ -12,10 +12,10 @@ Author URI:         http://creativemarket.com/digitalcookers
    ========================================================================== */
 
 html,body,#page{width: 100%;height: 100%;margin: 0px;padding: 0px; -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;}
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;}
 html{-webkit-font-smoothing: antialiased;}
-body {background: #fff; font-family: 'Cabin','Helvetica Neue';line-height: 1.2em;}   
+body {background: #fff; font-family: 'Cabin','Helvetica Neue';line-height: 1.2em;}
 h1,h2,h3,h4,h5,h6{color: #ff6d00;letter-spacing: -0.03em;font-weight: bold; font-weight: 900; font-family: 'Merriweather', Times, serif;}
 
 a{color: #ff6d00; cursor:pointer;}
@@ -40,32 +40,37 @@ time{color:#ff6d00;}
 .centerUl li{ display: inline;text-align: center; margin:0 5px;}
 
 .flex-video {
-position: relative;
-padding-top: 25px;
-padding-bottom: 67.5%;
-height: 0;
-margin-bottom: 16px;
-overflow: hidden;
+    position: relative;
+    padding-top: 25px;
+    padding-bottom: 67.5%;
+    height: 0;
+    margin-bottom: 16px;
+    overflow: hidden;
 }
- 
+
 .flex-video .widescreen { padding-bottom: 57.25%; }
 .flex-video .vimeo { padding-top: 0; }
- 
+
 .flex-video iframe,
 .flex-video object,
 .flex-video embed {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 @media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
-.flex-video { padding-top: 0; }
+    .flex-video { padding-top: 0; }
 }
 
 
 
+/* ==========================================================================
+   Mobile Configuration
+   ========================================================================== */
+
+#AboutUs{padding-bottom: 10em !important;}
 
 
 /* ==========================================================================
@@ -75,7 +80,7 @@ height: 100%;
 .relative{position: relative !important;}
 .left0{left:0 !important;}
 .inline{display:inline !important;}
-
+.width100{width:100% !important;}
 
 
 /* ==========================================================================
@@ -86,6 +91,11 @@ height: 100%;
 .icon-7x{font-size:7em;}
 .icon-8x{font-size:8em;}
 .icon-9x{font-size:9em;}
+
+
+
+
+
 
 
 /* Specify Swiper's Size: */
@@ -99,16 +109,16 @@ height: 100%;
    Header Styles
    ========================================================================== */
 
-#header{overflow:hidden;height:auto;background: url('../images/background.jpg') fixed no-repeat; height:100%;}
+#header{overflow:hidden;height:auto; height: 100%;background:#262626}
 .no-touch #header{-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;background-attachment: fixed;}
 
 #logo{display:none;}
 #logo img{width:100px;}
-   
+
 /* Intro Styles */
-   
-#intro{text-align: center;}  
-#intro h1{margin-top: 0.5em;margin-bottom: 0;color: white;font-size: 1.875em;opacity:0;padding-top: 2em;}
+
+#intro{text-align: center;top:74px;}
+#intro h1{margin-bottom: 0;color: white;font-size: 1.875em;opacity:0;padding-top: 2em;}
 #intro h2{margin-bottom: 0;font-size: 1.5em;opacity:0;padding-top: 2em;}
 #intro p{color:white;}
 
@@ -135,9 +145,9 @@ height: 100%;
 /* ==========================================================================
    All Section Styles
    ========================================================================== */
-   
-section{padding-top: 3.125em;padding-bottom: 1.875em;text-align: center;}
-section h1,.intro p{margin-bottom: 0; }  
+
+section{padding-top: 6.125em;padding-bottom: 3.875em;text-align: center;}
+section h1,.intro p{margin-bottom: 0; }
 
 
 /* ==========================================================================
@@ -187,10 +197,10 @@ section#studio{padding-bottom: 0;overflow:hidden;}
 #studio, #contacts,#AboutUs{background:#f2f2f2;}
 .swiper-slide:not(.swiper-slide-active) img{-webkit-filter: grayscale(100%);filter: url("data:image/svg+xml;filter: gray;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");}
 
-/* Swiper - Mobile Touch Slider CSS 
-   http://www.idangero.us/sliders/swiper 
+/* Swiper - Mobile Touch Slider CSS
+   http://www.idangero.us/sliders/swiper
 */
-   
+
 /* Swiper Styles */
 .swiper-container {position:relative;z-index:1;overflow:hidden;margin:0 auto;-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;-ms-backface-visibility:hidden;-o-backface-visibility:hidden;backface-visibility:hidden;/* Fix of Webkit flickering */}
 .swiper-wrapper {position:relative;width:100%;-webkit-transition-timing-function:ease;-moz-transition-timing-function:ease;-ms-transition-timing-function:ease;-o-transition-timing-function:ease;transition-timing-function:ease;-webkit-transition-duration:0s;-moz-transition-duration:0s;-ms-transition-duration:0s;-o-transition-duration:0s;transition-duration:0s;-webkit-transition-property:-webkit-transform, left, top;-moz-transition-property:-moz-transform, left, top;-ms-transition-property:-ms-transform, left, top;-o-transition-property:-o-transform, left, top;transition-property:transform, left, top;-webkit-transform:translate3d(0px,0,0);-moz-transform:translate3d(0px,0,0);-ms-transform:translate3d(0px,0,0);-o-transform:translate3d(0px,0,0);-o-transform:translate(0px,0px);transform:translate3d(0px,0,0);}
@@ -208,7 +218,7 @@ section#studio{padding-bottom: 0;overflow:hidden;}
 /* ==========================================================================
    Services Styles
    ========================================================================== */
-   
+
 .service{padding:10px 0;color:#999;text-align: center;cursor:pointer;}
 .service h5{margin-bottom: 0;margin-bottom: 0.5em;color:#999;font-size: 1.3125em;-webkit-transition: all 0.4s ease-in-out;-moz-transition: all 0.4s ease-in-out;-o-transition: all 0.4s ease-in-out;transition: all 0.4s ease-in-out;}
 .service p{padding:0 1em;font-size: 1em;line-height:1.2em;}
@@ -229,13 +239,18 @@ section#studio{padding-bottom: 0;overflow:hidden;}
 /* ==========================================================================
    Work Styles
    ========================================================================== */
-   
-#works{padding-bottom: 3.25em;background-color:#f2f2f2;overflow-x: hidden;}
+
+#works{padding-bottom: 3.25em;background-color:#ffffff;overflow-x: hidden;}
 #works .intro{margin-bottom:1.5em;}
 #w-filter.row select.visible-xs{width:100%;}
 
 .work {position:relative;overflow:hidden; margin-bottom: 1.5em;cursor:pointer;}
-.work img{position: relative; width:100%;top:0;-webkit-transition: top 0.3s ease-in-out;-moz-transition: top 0.3s ease-in-out;-o-transition: top 0.3s ease-in-out;transition: top 0.3s ease-in-out; display:block;-webkit-filter: grayscale(100%);filter: url("data:image/svg+xml;filter: gray;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");}
+
+
+/*for desktop*/
+/*.work img{position: relative; width:100%;top:0;-webkit-transition: top 0.3s ease-in-out;-moz-transition: top 0.3s ease-in-out;-o-transition: top 0.3s ease-in-out;transition: top 0.3s ease-in-out; display:block;-webkit-filter: grayscale(100%);filter: url("data:image/svg+xml;filter: gray;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");}*/
+
+.work img{position: relative; width:100%;top:0;display:block;}
 
 #work-filter{margin:0;margin-bottom: 0.5em;font-weight: bold;font-size: 1.3125em;-webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}
 #work-filter li{cursor:pointer;}
@@ -252,37 +267,6 @@ section#studio{padding-bottom: 0;overflow:hidden;}
 /* MixUp Filtering */
 #work-container .mix{display: none;opacity: 0;}
 #work-container [class*="column"] + [class*="column"]:last-child {float: left;}
-
-/* ==========================================================================
-   Feed Styles
-   ========================================================================== */
-
-#feed{background-color:white; text-align: center;padding-bottom: 0;}
-#feed .row{max-width: none;}
-#feed .intro, #feed .intro h2{margin-bottom: 0;}
-
-#social-feed{margin:2em 0 3em 0;}
-#social-feed li{cursor:pointer;}
-
-#feed ul li.active i{text-decoration:none;color:black;}
-#feed ul li:not(.active) i{text-decoration:none;color:black; opacity:0.5;-webkit-transition: all 0.4s ease-in-out;-moz-transition: all 0.4s ease-in-out;-o-transition: all 0.4s ease-in-out;transition: all 0.4s ease-in-out;}
-#feed ul li:hover i{text-decoration:none;opacity:1;}
-
-#twitter{position: relative; overflow-y: hidden;height: 22em;margin-bottom: 2em;}
-#instagram, #twitter{display:none;overflow:hidden;}
-
-#twitter ul.tweetList {position: absolute;}
-#twitter ul.tweetList li {list-style:none;height: 10em;font-size: 1.25em;}
-#twitter ul.tweetList li p{font-size: 1em;}
-#tweet_loader{font-size: 2em;text-align: center; color:#ff6d00;}
-#loading{color:#ff6d00;}
-
-#instagram li{list-style: none;}
-#flickr .col-xs-3,#instagram .col-xs-3,#flickr .col-sm-2, #instagram .col-sm-2{margin: 0;padding: 0;}
-#flickr img, #instagram img{position:relative;display:block;-webkit-transition: all 0.4s ease-in-out;-moz-transition: all 0.4s ease-in-out;-o-transition: all 0.4s ease-in-out;transition: all 0.4s ease-in-out;width: 100%;-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.2);-moz-box-shadow: 0 1px 3px rgba(0,0,0,.2);box-shadow: 0 1px 3px rgba(0,0,0,.2);-webkit-filter: grayscale(100%);filter: url("data:image/svg+xml;filter: gray;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");}
-#flickr img:hover, #instagram img:hover{opacity: 0.8;filter: alpha(opacity=80);-webkit-filter: grayscale(0%);filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");}
-
-.instagram-placeholder,.flickr-photo{margin-bottom: 1em;}
 
 /* ==========================================================================
    Contact Styles
@@ -333,7 +317,7 @@ footer hr{margin:0; margin-bottom:2em;border-bottom:1px solid #cccccc;}
 /* ==========================================================================
    Project Styles
    ========================================================================== */
-   
+
 #project-page{display:none;}
 #project-page .button{border:none;box-shadow:inherit;}
 
@@ -350,7 +334,7 @@ footer hr{margin:0; margin-bottom:2em;border-bottom:1px solid #cccccc;}
 
 #next-project,#previous-project,#close-project{margin-top: 0.5em;width:2em; height:2em;background-size: 2em;background-repeat:no-repeat;cursor:pointer;}
 
-#project-header img{display:block;width:100%;} 
+#project-header img{display:block;width:100%;}
 
 #next-project{float:right;}
 #close-project{text-align: center;}
@@ -371,88 +355,90 @@ footer hr{margin:0; margin-bottom:2em;border-bottom:1px solid #cccccc;}
 
 /* Styles for Specific for bigger divices */
 @media (min-width: 992px) {
-	
 
-	
-	.intro{margin-bottom: 6.25em;}
-	
-	/* All Section Styles */
-	
-	section{padding-top: 6.25em;padding-bottom: 3.75em;}
-   section h1 {font-size:3.125em;}
-   section .intro p {font-size:1.5em;}
-	
-	/* Header */
-	
-	#logo img{width:150px;}
 
-	#intro h1{margin-top: 1.25em;font-size: 3em;}
-	#intro h2{font-size: 2em;}
-	
-	#explore{margin-top: 0em;}
-	
-	/* Navigation */
-	
-	#top-navigation ul{float:right;}
-   #top-navigation ul{display:none;font-size: 1.285em;margin-top: 0.3em;}
-	
-	/* Logo */
-	
-	#logo-lettering{margin-top: 0.3em;}
-	
-	/* Top Navigation */
-	
-	#top-bar{top:-60px;height:3.75em;}
-	#top-navigation{margin-top: 1em;}
-	#top-navigation ul{display:inherit;}
-	#top-navigation li{width:inherit;}
-	
-	/* Team */
-	
-	.member{margin-bottom: 0;min-height: inherit;}
-	.member h5{font-size: 1.3125em;}
-	.member p{font-size: 1em;}
-	.member-photo{max-height: inherit;}
-	
-	.member ul.social li a{width:2em;height:2em;background-size: 2em;}
-	
-	/* Services */
-	.service img{margin-top:0;width:auto;height: 100px;}
-	
-	/* Feed */
-	
-	.instagram-placeholder,.flickr-photo{margin-bottom: inherit;}
-   #twitter{height: 16em;}
 
-   #twitter ul.tweetList li {height: 7em;}
-	
-	/* Contacts */
-	#contacts{padding-bottom: 0;}
-	
-	/* Project */
-	
-	#project-details{padding:5em 0;}
-	#project-details #project-description{margin-bottom: 0;}
-	#project-sidebar{text-align: right;}
-	
-	#project-top-bar{height:auto;}
-	
-	#next-project,#previous-project,#close-project,#next-project-name, #previous-project-name{position:fixed; z-index: 999;}
-	#close-project{top:0.4125em; right:1.25em;width:1.5em;height:1.5em;background-size: 1.5em;}
-	#next-project{top:18.2em; right:1.25em;}
-	#previous-project{top:18.2em; left:1.25em;}
-		
-	#next-project-name, #previous-project-name{background-color:rgb(244,89,78);background-color:rgba(244,89,78,0.7);padding:0.5em 1em;opacity:0; display: inherit;color:white;}
-	#next-project-name{top:18.8em; right:8em;}
-	#previous-project-name{top:18.8em; left:8em;}
-	
-	#next-project-name h2,#previous-project-name h2{color:white;font-size: 0.8em; padding:0;margin: 0;}
-	
-	#next-project, #previous-project, #close-project{opacity:0.6;-webkit-transition: opacity 0.3s ease-in-out;-moz-transition: opacity 0.3s ease-in-out;-o-transition: opacity 0.3s ease-in-out;transition: opacity 0.3s ease-in-out;}
-	#next-project:hover,#previous-project:hover,#close-project:hover{opacity:1;}
-	
+    .intro{margin-bottom: 6.25em;}
+
+    /* All Section Styles */
+
+    section{padding-top: 6.25em;padding-bottom: 3.75em;}
+    section h1 {font-size:3.125em;}
+    section .intro p {font-size:1.5em;}
+
+    /* Header */
+
+    #logo img{width:150px;}
+
+    #intro h1{font-size: 3em;}
+    #intro h2{font-size: 2em;}
+
+    #explore{margin-top: 0em;}
+
+    /* Navigation */
+
+    #top-navigation ul{float:right;}
+    #top-navigation ul{display:none;font-size: 1.285em;margin-top: 0.3em;}
+
+    /* Logo */
+
+    #logo-lettering{margin-top: 0.3em;}
+
+    /* Top Navigation */
+
+    #top-bar{top:-60px;height:3.75em;}
+    #top-navigation{margin-top: 1em;}
+    #top-navigation ul{display:inherit;}
+    #top-navigation li{width:inherit;}
+
+    /* Team */
+
+    .member{margin-bottom: 0;min-height: inherit;}
+    .member h5{font-size: 1.3125em;}
+    .member p{font-size: 1em;}
+    .member-photo{max-height: inherit;}
+
+    .member ul.social li a{width:2em;height:2em;background-size: 2em;}
+
+    /* Services */
+    .service img{margin-top:0;width:auto;height: 100px;}
+
+    /* Feed */
+
+    .instagram-placeholder,.flickr-photo{margin-bottom: inherit;}
+    #twitter{height: 16em;}
+
+    #twitter ul.tweetList li {height: 7em;}
+
+    /* Contacts */
+    #contacts{padding-bottom: 0;}
+
+    /* Project */
+
+    #project-details{padding:5em 0;}
+    #project-details #project-description{margin-bottom: 0;}
+    #project-sidebar{text-align: right;}
+
+    #project-top-bar{height:auto;}
+
+    #next-project,#previous-project,#close-project,#next-project-name, #previous-project-name{position:fixed; z-index: 999;}
+    #close-project{top:0.4125em; right:1.25em;width:1.5em;height:1.5em;background-size: 1.5em;}
+    #next-project{top:18.2em; right:1.25em;}
+    #previous-project{top:18.2em; left:1.25em;}
+
+    #next-project-name, #previous-project-name{background-color:rgb(244,89,78);background-color:rgba(244,89,78,0.7);padding:0.5em 1em;opacity:0; display: inherit;color:white;}
+    #next-project-name{top:18.8em; right:8em;}
+    #previous-project-name{top:18.8em; left:8em;}
+
+    #next-project-name h2,#previous-project-name h2{color:white;font-size: 0.8em; padding:0;margin: 0;}
+
+    #next-project, #previous-project, #close-project{opacity:0.6;-webkit-transition: opacity 0.3s ease-in-out;-moz-transition: opacity 0.3s ease-in-out;-o-transition: opacity 0.3s ease-in-out;transition: opacity 0.3s ease-in-out;}
+    #next-project:hover,#previous-project:hover,#close-project:hover{opacity:1;}
+
 
 }
+
+
 
 
 
